@@ -1,0 +1,60 @@
+<html lang="es" >
+  <head>
+    <meta charset="utf-8">
+    <title>Simon Dice</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="simon.css">
+    <link rel="stylesheet" type="text/css" href="sweetalert.css">
+  <body>
+    <div id="levelbox" class="levelbox active">
+      <h1>Simon dice!</h1>
+      <p>¿Qué nivel te gustaría jugar?</p>
+      <div class="buttonsbox">
+        <div class="level" onclick="startGame(1)">Fácil</div>
+        <div class="level" onclick="startGame(2)">Medio</div>
+        <div class="level" onclick="startGame(3)">Difícil</div>
+        </div>
+    </div>
+    <div id="keyboard" class="keyboard">
+      <h1>Simon dice!</h1>
+      <p>Cuando termine la secuencia pulsa las teclas ilumindas en orden correcto.</p>
+      <br/>
+      <div class="row">
+        <div class="key" data-key= "81">q</div>
+        <div class="key" data-key= "87">w</div>
+        <div class="key" data-key= "69">e</div>
+        <div class="key" data-key= "82">r</div>
+        <div class="key" data-key= "84">t</div>
+        <div class="key" data-key= "89">y</div>
+        <div class="key" data-key= "85">u</div>
+        <div class="key" data-key= "73">i</div>
+        <div class="key" data-key= "79">o</div>
+        <div class="key" data-key= "80">p</div>
+      </div>
+      <div class="row">
+        <div class="key" data-key= "65">a</div>
+        <div class="key" data-key= "83">s</div>
+        <div class="key" data-key= "68">d</div>
+        <div class="key" data-key= "70">f</div>
+        <div class="key" data-key= "71">g</div>
+        <div class="key" data-key= "72">h</div>
+        <div class="key" data-key= "74">j</div>
+        <div class="key" data-key= "75">k</div>
+        <div class="key" data-key= "76">l</div>
+      </div>
+      <div class="row last">
+        <div class="key" data-key= "90">z</div>
+        <div class="key" data-key= "88">x</div>
+        <div class="key" data-key= "67">c</div>
+        <div class="key" data-key= "86">v</div>
+        <div class="key" data-key= "66">b</div>
+        <div class="key" data-key= "78">n</div>
+        <div class="key" data-key= "77">m</div>
+      </div>
+    </div>
+    	
+    <script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+    <script src="sweetalert.min.js"></script>
+    <script src="simon.js"></script>
+  </body>
+</html>
